@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<title>恭贺新春</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/greetingCard.css" />
+	</head>
+
+	<body>
+		<div class="flipbook-viewport">
+			<div class="container">
+				<audio id="audioDemo" src="images/bgmusic.mp3" loop></audio>
+				<div id="next">滑动翻页>></div>
+				<div id="wrapper" class="flipbook">
+
+					<div class="page1" style="background:url(images/snow.jpg);background-size:cover">
+						<img class="page1-lantern1" src="images/denglong1.png" />
+						<img class="page1-lantern2" src="images/denglong2.png" />
+						<img class="page1-img" src="images/1964a1c7-332a-470b-a237-4ce91ad329ab@264w_70Q_1an.gif" />
+						
+						<img class="page1-img2" src="images/text3.png" />
+						<img class="page1-img3" src="images/text4.png" />
+						<img class="page1-img4" src="images/text5.png" />
+					</div>
+					<div class="page2" style="background:url(images/flasg.gif);background-size:cover">
+						<img class="page2-img1" src="images/824392932821169776.jpg" />
+						<img class="page2-img2" src="images/760411711420057891.jpg" />
+						<img class="page2-img3" src="images/601733911875846114.jpg" />
+						<img class="page2-img4" src="images/315341989762666931.jpg" />
+						<ul>
+							<li class="animated bounceInLeft">过去的一年里</li>
+							<li class="animated bounceInRight">你的努力犹如惊叹号，勤勤恳恳</li>
+							<li class="animated bounceInLeft">你的收获好比句号，圆圆满满</li>
+							<li class="animated bounceInRight">你的成功就像省略号，绵延不断</li>
+						</ul>
+					</div>
+					<div class="page3" style="background:url(images/cheliang.gif);background-size:cover">
+						<ul>
+							<li class="animated bounceInLeft">过去的一年里</li>
+							<li class="animated bounceInRight">回首，那是我们共同奋斗过的足迹</li>
+							<li class="animated bounceInLeft">展望，我们继续并肩前行</li>
+							<li class="animated bounceInRight">直到希望的未来变得清晰可见</li>
+						</ul>
+					</div>
+					<div class="page4" style="background:url(images/bg.png);background-size:100%">
+						<img class="page4-cloud1" src="images/cloud1.png" />
+						<img class="page4-tree" src="images/tree.png" />
+						<img class="page4-cloud2" src="images/cloud2.png" />
+						<img class="page4-chicken1" src="images/1.png" />
+						<img class="page4-chicken2" src="images/2.png" />
+						<img class="page4-text" src="images/text12.png" />
+					</div>
+					<div class="page5" style="background:url(images/d71f5a347d8b9d7ce90dc14ba8bf974fd71708b943198-rJc2gm.png);background-size:100%">
+						<img class="page5-img1" src="images/2017.png" />
+						<img class="page5-img2" src="images/lantern.png" />
+						<img class="page5-img3" src="images/yanhua.png" />
+						<img class="page5-text" src="images/text.png" />
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+		<script type="text/javascript" src="js/greetingCard.js"></script>
+		<script>
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+			var audioDemo = document.getElementById("audioDemo");
+			audioDemo.src = "images/bgmusic.mp3";
+			audioDemo.play();
+
+			function audioAutoPlay(id) {
+				var audio = document.getElementById(id);
+				audio.play();
+				document.addEventListener("WeixinJSBridgeReady", function() {
+					audio.play();
+				}, false);
+			}
+			audioAutoPlay('audioDemo');
+		</script>
+	</body>
+
+</html>
