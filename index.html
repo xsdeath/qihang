@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-		<title>恭贺新春</title>
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/animate.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/greetingCard.css" />
-	</head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>恭贺新春</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/greetingCard.css" />
+</head>
 
-	<body>
-		<div class="flipbook-viewport">
-			<div class="container">
-				
-				
+<body>
+    <div class="flipbook-viewport">
+        <div class="container">
+            <div class="page1" style="background:url(images/snow.jpg);background-size:cover">
+                <img class="page1-lantern1" src="images/denglong1.png" />
+                <img class="page1-lantern2" src="images/denglong2.png" />
+                <img class="page1-img" src="images/1964a1c7-332a-470b-a237-4ce91ad329ab@264w_70Q_1an.gif" />
+                <ul>
+                    <li class="animated bounceInLeft">过去的一年里</li>
+                    <li class="animated bounceInRight">你的努力犹如惊叹号，勤勤恳恳</li>
+                    <li class="animated bounceInLeft">你的收获好比句号，圆圆满满</li>
+                    <li class="animated bounceInRight">你的成功就像省略号，绵延不断</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-					<div class="page1" style="background:url(images/snow.jpg);background-size:cover">
-						<img class="page1-lantern1" src="images/denglong1.png" />
-						<img class="page1-lantern2" src="images/denglong2.png" />
-						<img class="page1-img" src="images/1964a1c7-332a-470b-a237-4ce91ad329ab@264w_70Q_1an.gif" />
-						<ul>
-							<li class="animated bounceInLeft">过去的一年里</li>
-							<li class="animated bounceInRight">你的努力犹如惊叹号，勤勤恳恳</li>
-							<li class="animated bounceInLeft">你的收获好比句号，圆圆满满</li>
-							<li class="animated bounceInRight">你的成功就像省略号，绵延不断</li>
-						</ul>
-						
-					</div>
-								
-					
-				
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+    <script type="text/javascript" src="js/greetingCard.js"></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
+        var audioDemo = document.getElementById("audioDemo");
+        audioDemo.src = "images/bgmusic.mp3";
+        audioDemo.play();
 
-				</div>
-			</div>
-		</div>
-		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
-		<script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
-		<script type="text/javascript" src="js/greetingCard.js"></script>
-		<script>
-			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
-			var audioDemo = document.getElementById("audioDemo");
-			audioDemo.src = "images/bgmusic.mp3";
-			audioDemo.play();
-
-			function audioAutoPlay(id) {
-				var audio = document.getElementById(id);
-				audio.play();
-				document.addEventListener("WeixinJSBridgeReady", function() {
-					audio.play();
-				}, false);
-			}
-			audioAutoPlay('audioDemo');
-		</script>
-	</body>
+        function audioAutoPlay(id) {
+            var audio = document.getElementById(id);
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+            }, false);
+        }
+        audioAutoPlay('audioDemo');
+    </script>
+</body>
 
 </html>
