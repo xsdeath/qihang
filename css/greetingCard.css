@@ -71,8 +71,8 @@ img{
 	position: absolute;
 	width: 4rem;
 	left: 50%;
-	margin-left: -2rem;
-	top: 65%;
+	margin-left: 0rem;
+	top: 0%;
 }
 
 .swiper-slide-active .page1-text {
