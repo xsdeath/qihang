@@ -457,7 +457,7 @@ img{
 }
 .page1 .animated{
 	-webkit-animation-duration: 3s;
-	-webkit-animation-delay: -2s;
+	-webkit-animation-delay: 8s;
 	animation-duration: 3s;
-	animation-delay: -2s;
+	animation-delay: 8s;
 }
