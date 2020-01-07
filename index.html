@@ -32,21 +32,7 @@
     <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
     <script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
     <script type="text/javascript" src="js/greetingCard.js"></script>
-    <script>
-        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px";
-        var audioDemo = document.getElementById("audioDemo");
-        audioDemo.src = "images/bgmusic.mp3";
-        audioDemo.play();
-
-        function audioAutoPlay(id) {
-            var audio = document.getElementById(id);
-            audio.play();
-            document.addEventListener("WeixinJSBridgeReady", function () {
-                audio.play();
-            }, false);
-        }
-        audioAutoPlay('audioDemo');
-    </script>
+  
 </body>
 
 </html>
