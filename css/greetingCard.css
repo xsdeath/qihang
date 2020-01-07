@@ -438,3 +438,26 @@ img{
 	-webkit-animation: flip 2s,rubberBand 2s 2s;
 	animation: flip 2s,rubberBand 2s 2s;
 }
+
+
+.page1 ul{
+	position: relative;
+	width: 100%;
+	top: 1rem;
+}
+.page1 li{
+	display: none;
+    color: #fff;
+	font-size: 17px;
+    text-align: center;
+    line-height: 2;
+}
+.swiper-slide-active li{
+	display: block;
+}
+.page1 .animated{
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 14s;
+	animation-duration: 3s;
+	animation-delay: 14s;
+}
